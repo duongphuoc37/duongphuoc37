@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TroFree - Tìm trọ miễn phí</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="nav wrap"><a class="logo" href="#">🏠 TroFree</a>
+    <nav><a href="#rooms">Tìm phòng</a><a href="#post">Đăng tin</a><a href="#about">Giới thiệu</a></nav>
+    <button class="btn ghost" onclick="alert('Bản demo: đăng nhập sẽ được kết nối Supabase ở bước tiếp theo.')">Đăng nhập</button>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="wrap">
+  <span class="pill">MIỄN PHÍ CHO NGƯỜI THUÊ & CHỦ TRỌ</span>
+  <h1>Tìm phòng trọ phù hợp<br><span>nhanh hơn, dễ hơn.</span></h1>
+  <p>Kết nối trực tiếp chủ trọ và người thuê, không qua môi giới.</p>
+  <div class="search">
+    <input id="q" placeholder="Nhập khu vực, tên đường...">
+    <select id="city"><option value="">Tất cả khu vực</option><option>Hà Nội</option><option>TP. Hồ Chí Minh</option><option>Đà Nẵng</option><option>Bắc Ninh</option><option>Ninh Bình</option></select>
+    <select id="price"><option value="">Mọi mức giá</option><option value="3">Dưới 3 triệu</option><option value="5">3 - 5 triệu</option><option value="999">Trên 5 triệu</option></select>
+    <button class="btn" onclick="filterRooms()">🔎 Tìm phòng</button>
+  </div>
+</div></section>
+
+<section id="rooms" class="section wrap">
+  <div class="section-head"><div><h2>Phòng mới đăng</h2><p id="count">6 tin đăng</p></div><button class="btn ghost" onclick="renderRooms(rooms)">Xem tất cả</button></div>
+  <div id="roomGrid" class="grid"></div>
+</section>
+
+<section id="post" class="post wrap">
+  <div><span class="pill">DÀNH CHO CHỦ TRỌ</span><h2>Có phòng trống?<br>Đăng tin hoàn toàn miễn phí.</h2><p>Tiếp cận người thuê trực tiếp và quản lý tin đăng dễ dàng.</p></div>
+  <button class="btn big" onclick="openPost()">➕ Đăng phòng ngay</button>
+</section>
+
+<section id="about" class="section wrap features">
+  <div><b>🔎 Tìm kiếm dễ dàng</b><p>Lọc theo khu vực và mức giá.</p></div>
+  <div><b>🤝 Kết nối trực tiếp</b><p>Liên hệ chủ trọ nhanh chóng.</p></div>
+  <div><b>🛡️ Hướng tới an toàn</b><p>Có tính năng báo cáo tin xấu.</p></div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modal-card">
+  <button class="close" onclick="closeModal()">×</button><div id="modalBody"></div>
+</div></div>
+<footer><div class="wrap">© 2026 TroFree · Nền tảng kết nối chủ trọ và người thuê</div></footer>
+<script src="app.js"></script>
+</body></html>

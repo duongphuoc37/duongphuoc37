@@ -1,16 +1,16 @@
-## Hi there 👋
+# TroFree — MVP website kết nối chủ trọ và người thuê
 
-<!--
-**duongphuoc37/duongphuoc37** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Đây là bản demo frontend chạy độc lập, chưa có database/đăng nhập thật.
 
-Here are some ideas to get you started:
+## Chạy nhanh
+- Cách đơn giản nhất: mở `index.html` bằng trình duyệt.
+- Hoặc dùng VS Code + Live Server.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Bản tiếp theo nên kết nối
+- Supabase Auth: đăng ký/đăng nhập.
+- Supabase Database: users, listings, reports, favorites.
+- Supabase Storage: ảnh phòng.
+- Vercel: triển khai website.
+
+## Lưu ý
+Số điện thoại trong dữ liệu demo là số giả. Khi triển khai thật, cần có kiểm duyệt tin và bảo vệ dữ liệu người dùng.
